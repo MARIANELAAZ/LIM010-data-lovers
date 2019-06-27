@@ -1,4 +1,4 @@
-# INDIKA-BM
+# INDIK-BM
 
 ## Índice
 
