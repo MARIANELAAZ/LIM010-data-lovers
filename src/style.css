@@ -1,74 +1,137 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Open Sans;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.padre{
   
-.screen1{
-    position: relative;
+    display: flex;
+    flex-flow: column;
+    height:100vh;
+}
+.header{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    background-color:rgba(0, 51, 78, 0.897);
+    
+}
+   .menu{
+    /*background:#f80723; */
+    
+}
+   .logo{
+    display: flex;
+    margin-right: 30px;
+    padding: 5px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+    .nav{
+    
+}
+
+.section{  /*screen1*/
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    background: url(fondo3.png) no-repeat center top;
+    background-size: cover;
+
+}
+    .login{
+    width: 420px;
+    height: 500px;
+    background:#e8e8e8e1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-start;
-    width: 100vh;  
-}
-
-header{
-
-    width: 100%;
-    color: #ffffff;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     align-content: center;
-    justify-content: right;
-    background-color: rgba(56, 51, 51, 0.3)
+    
+}
+    .img-logo{
+    width: 300px;
+    padding-left: 5px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center; 
+    
 }
 
-header h1{
+.field{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
      
-    margin-right: 30px;
-    font-family: Verdana;
-    font-size: 30px;
 }
-
-.screen1{
-    background: #F7F7F7;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
-
-}
-
-.electronico{
-
-    font-family: Open Sans;
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 25px;
-/* or 156% */
-
     display: flex;
-    align-items: center;
+}
+  
+.textarea{
+    width: 335px;
+    height: 40px;
+    border: rgb(255, 255, 255);
+}
+.text1{
 
-    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 130px;
+   
+}
+.text2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
 
 }
-
-.textarea{
-
-    display: flex;
-    align-content: center;
-   
-    left: 34.03%;
-    right: 50%;
-    top: 24.8%;
-    bottom: 24.8%;
-    width: 334px;
-    height: 35px;
     
-    background: #FFFFFF;
-    border-radius: 2px;
+.footer{
+    
+}
 
+.login button {
 
+    width: 335px;
+    height: 40px;
+    margin-top: 30px;
+    background: #3897F0;
+    border-radius: 7px;
+    border: #3897F0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 10px;
+    
+    /*texto*/
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;
 }
