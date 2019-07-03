@@ -24,6 +24,8 @@ económicos y comerciales) que le permitirá una mejor visión en la toma de dec
 
   - "INDIK-BM", es creado con la finalidad de brindarle al cliente información  que le permitirá tener una visión no solo de Perú sino tambien de Brasil, Mexico y Chile; y el comportamiento real de dichas regiones considerdas dentro de cada variable materia de estudio.
 
+  - Para poder interactuar con la página, al iniciar sesión deberán utilizar como usuario y contraseña LABORATORIA.
+
     ## Prototipo de Baja Fidelidad en papel:
   
   - Mobile 
