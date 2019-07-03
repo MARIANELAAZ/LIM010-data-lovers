@@ -10,35 +10,129 @@
     <div class="padre">
       <header class="header">
         <div class="menu">
-         <div class="logo">INDIKA - BM</div> 
+         <div class="logo">INDIK - BM</div> 
          <div class="nav"></div>
         </div>
       </header>
-    <main>
+  <main>
+      <!--PRIMERA PAGINA-->
+      <div id="Ingresar"> 
       <section class="section">
-      <form class="login">
-        <div class="formName">
+         <form class="login">
+        
+            <div class="formName">
             <img class="img-logo" src="https://desarrollodocente.org/assets/collaborators/logo_BM-e383f739aae4ac6ed2512bcdef10c51cc95ff0ef98de3f2849a18a5ae57d9536.png"/>
-          <div class="field">
-              <p class="text">Correo Electrónico</p>
-              <input type="usuario"  id="usuario"  class="textarea">
-          </div>
-          <div class="field">
-              <p class="text">Contraseña</p>
-              <input type="password" id="password" class="textarea">
-          </div>
-        </div>
-        <div class= "text1">¿Olvidaste tu Contraseña?</div>
-          <div class="button">
-              <button type="button"  id="button"   class="btn">INGRESA</button>
-          <div class="text2">¿No tienes una?<b> &nbspRegistrate</b></div>   
-          
-          </div>
 
+            <div class="field">
+              <p class="text">Correo Electrónico</p>
+              <input type="text"  id="usuario"  class="textarea" maxlength="11">
+            </div>
+
+            <div class="field">
+              <p class="text">Contraseña</p>
+              <input type="password" id="password" class="textarea" maxlength="11">
+            </div>
+            </div>
+
+            <div class= "text1">¿Olvidaste tu Contraseña?</div>
+
+            <div class="button">
+              <button type="button"  id="button"   class="btn">INGRESA</button>
+
+            <div class="text2">¿No tienes una?<b> &nbspRegistrate</b></div>  
+            </div>
         </form>
       </section>
     </div>
-    </main>
+
+      <!--SEGUNDA PAGINA-->
+
+      <div id="Datos" class="ocultar">
+          <section class="section">
+              <div class="field">
+                  <p class="text">Información - Estadísticas Reales</p>
+                  <p class="text">Explorar Datos</p>
+                  <p class="text">Por País:</p>
+                  <select name="" id="">
+                      <option value="brasil">Brasil</option>
+                      <option value="chile">Chile</option>
+                      <option value="mexico">Mexico</option>
+                      <option value="peru">Perú</option>
+                  </select>
+                  <p class="text">Por Indicador:</p>
+                  <select name="" id="">
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                  </select>
+                </div>
+                <button type="button" id="seguir">SEGUIR</button>
+         </section>
+        </div>
+
+      <!--TERCERA PAGINA-->
+
+      <div id="Indicadores" class="ocultar">
+          <section class="section">
+              <div class="field">
+                  <p class="text">Evolucion</p>
+                  <p class="text">Por Años:</p>
+                  <select name="" id="">
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                  </select>
+                  <p class="text">Por Porcentaje:</p>
+                  <select name="" id="">
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                  </select>
+                </div>
+                <button type="button" id="continuar">CONTINUAR</button>
+          </section>
+         </div>
+
+      <!--CUARTA PAGINA-->
+
+      <div id="Años" class="ocultar">
+          <section class="section">
+              <div class="field">
+                  <p class="text">Indicadores</p>
+                  <p class="text">Años:</p>
+                  <select name="" id="">
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                  </select>
+              </div>
+              <button type="button" id="pasar">PASAR</button>
+          </section>
+      </div>
+
+      <!--QUINTA PAGINA-->
+
+      <div id="Porcentaje" class="ocultar">
+          <section class="section">
+              <div class="field">
+                  <p class="text">Indicadores</p>
+                  <p class="text">Porcentaje:</p>
+                  <select name="" id="">
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                      <option value=""></option>
+                  </select>
+              </div>
+              <button type="button" id="regresar">IR A INICIO</button>
+          </section>
+      </div>
+
+  </main>
   <footer></footer>
     
     <!-- <script src="./data/worldbank/worldbank.js"></script> -->

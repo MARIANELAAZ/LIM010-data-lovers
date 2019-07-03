@@ -135,3 +135,6 @@
     align-content: center; 
     justify-content: center;
 }
+.ocultar{
+    display: none;
+}
