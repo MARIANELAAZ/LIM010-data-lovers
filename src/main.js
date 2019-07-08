@@ -12,7 +12,22 @@ clickBoton.addEventListener("click", ()=>{
     }
 });
 
-const clickSeguir = document.getElementById("seguir");
+//const mostrar = () =>{
+//const selected = document.getElementById('list').value;
+  //return(selected);
+//}
+
+/*const lista = document.getElementById("list");
+const indiceSeleccionado = lista.selectedIndex;
+const opcionSeleccionada = lista.options[indiceSeleccionado];
+const textoSeleccionado = opcionSeleccionada.text;
+const valorSeleccionado = opcionSeleccionada.value;
+
+alert("opcionSeleccionada: " + textoSeleccionado + "\n Valor de la opcion: "+ valorSeleccionado );
+
+
+//const clickSeguir = document.getElementById("seguir");
+//Indicadores.innerHTML= mostrar();
 
 clickSeguir.addEventListener("click", () =>{
     document.getElementById("Ingresar").classList.add("ocultar");
@@ -51,3 +66,27 @@ clickRegresar.addEventListener("click", () => {
     document.getElementById ("usuario").value = "";
     document.getElementById ("password").value = "";
 })
+
+//console.log("WORLDBANK");
+
+
+
+    //let mostrar='';
+    //const paises = Object.keys(WORLDBANK);
+    //if(document.getElementById('p1').checked==true){
+      //  for(let i=0; i<paises.length;i++){
+        //    let llamado = `<div = "banco">
+          //  <p>${WORLDBANK.PER.indicators[0].indicatorName}<p></div>`;
+           // mostrar+= llamado;
+            
+          //}
+    //}
+   // return;
+//}
+
+
+
+
+
+
+
