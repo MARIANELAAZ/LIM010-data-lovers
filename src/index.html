@@ -1,49 +1,109 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Lovers</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body> 
-    <div class="padre">
-      <header class="header">
-        <div class="menu">
-         <div class="logo">INDIKA - BM</div> 
-         <div class="nav"></div>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="body">
+  <div class="padre">
+    <div class="centrado" id="onload">
+      <div class="lds-facebook">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <header id='header' class="header ocultar">
+      <nav id="nav" class="nav1 ocultar">
+        <div class="contenedor-nav">
+          <div class="logo">INDIK - BM</div>
+          <div class="enlaces" id="enlaces">
+            <button id="enlace-inicio" class="btn-header">Inicio</button>
+            <button id="enlace-equipo" class="btn-header">Paises</button>
+            <button id="enlace-servicio" class="btn-header">Contacto</button>
+  
+          </div>
+          <div class="icono" id="open">
+            <span>&#9776;</span>
+          </div>
         </div>
-      </header>
+      </nav>
+      <div class="textos">
+        <h1>Indicadores De Desarrollo</h1>
+        <h2>Del Banco Mundial</h2>
+      </div>
+    </header>
     <main>
-      <section class="section">
-      <form class="login">
-        <div class="formName">
-            <img class="img-logo" src="https://desarrollodocente.org/assets/collaborators/logo_BM-e383f739aae4ac6ed2512bcdef10c51cc95ff0ef98de3f2849a18a5ae57d9536.png"/>
-          <div class="field"> <!--correo electrónico-->
-              <p class="text">Correo Electrónico</p>
-              <input type="usuario"  id="usuario"  class="textarea">
-          </div>
-          <div class="field"> <!--contraseña-->
-              <p class="text">Contraseña</p>
-              <input type="password" id="password" class="textarea">
-          </div>
-        </div>
-        <div class= "text1">¿Olvidaste tu Contraseña?</div>
-          <div class="button">
-              <button type="button"  id="button"   class="btn">INGRESA</button>
-          <div class="text2">¿No tienes una?<b> &nbspRegistrate</b></div>   
-          
+      <!--PRIMERA PAGINA-->
+      <div id="Ingresar">
+        <section class="section1" id="section1">
+          <form class="login">
+
+            <div class="formName">
+              <img class="img-logo"
+                src="https://desarrollodocente.org/assets/collaborators/logo_BM-e383f739aae4ac6ed2512bcdef10c51cc95ff0ef98de3f2849a18a5ae57d9536.png" />
+              <div class="field">
+                <!--correo electrónico-->
+                <p class="text">Correo Electrónico</p>
+                <input type="usuario" id="usuario" value="LABORATORIA" class="textarea">
+              </div>
+              <div class="field">
+                <!--contraseña-->
+                <p class="text">Contraseña</p>
+                <input type="password" id="password" value="LABORATORIA" class="textarea" maxlength="11">
+              </div>
+            </div>
+
+            <div class="text1">¿Olvidaste tu Contraseña?</div>
+
+            <div class="button">
+              <button type="button" id="button" class="btn">INGRESA</button>
+              <div class="text2">¿No tienes una?<b> &nbspRegistrate</b></div>
+            </div>
+          </form>
+        </section>
+      </div>
+  </div>
+
+  <!--SEGUNDA PAGINA-->
+
+  <div id="Datos" class="Datos ocultar">
+    <section class="section2">
+       <div id="imag" class="imag"> 
+        <form action="" class="action">
+          <div id="paises">
+            <button id="peru" value="PER" class="Peru">Perú</button>
+            <button id="brasil" value="BRA" class="brasil">Brasil</button>
+            <button id="chile" value="CHL" class="chile">Chile</button>
+            <button id="mexico" value="MEX" class="mexico">México</button>
           </div>
         </form>
-      </section>
-    </div>       
-    </div>
-    </main>
+      </div>
+    </section>
+  </div>
+   <!--tercera PAGINA-->
+  <section class="Indicadores ocultar">
+    <p class="text">Por Indicador:</p>
+      <select name="indicadores" id="indicadores">
+        <option disabled selected id="indicadorId" value="indicators">Busca Indicador</option>
+      </select>
+   <select name="filtradouno" id="filtradouno"></select>
+   <select name="filtradodos" id="filtradodos"></select>
+   <button id="buscar" class="buscar">Buscar</button>
+  </section>
+
+
+  </main>
   <footer></footer>
-    
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-    </div>
-  </body>
+  <script src="./data/worldbank/worldbank.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  </div>
+</body>
+
 </html>

@@ -1,10 +1,34 @@
-/* Manejo de data */
+//funcion para obtener los nombres de los paises
 
-// esta es una función de ejemplo
-// puedes ver como agregamos la función a nuestro objeto global window
+const country = (data, nombrePais) => {
+  const arrayCodigoPaises = [];
+  let rutaCodigoPais = data[nombrePais].indicators;
+  for (let i = 0; i < rutaCodigoPais.length; i++) {
+    arrayCodigoPaises.push(rutaCodigoPais[i]['countryName']+"-"+ rutaCodigoPais[i]['indicatorName']);
+  }
 
-const example = () => {
-  return 'example';
-};
+  return arrayCodigoPaises;
+}
+const fecha = (anioIncial,anioFinal,anioValor) => {
+const nuevoArray= [];
+const rutaAnio= Object.keys(anioValor); // todos los años (keys)//
+const rutaValor= Object.keys(anioValor); // todos los valores del año//
+for (let i = 0; i < rutaAnio.length; i++){
+  if (anioIncial >= rutaAnio [i] && anioFinal <= rutaAnio[i]){
+   nuevoArray.push( rutaAnio [i], rutaValor[i])
+  }
+  }
+  console.log(fecha);
+// return nuevoArray;
+}
+  
+  
 
-window.example = example;
+
+//WORLDBANK.CHL.indicators[0].countryCode
+//  funcion para mostrar los nombres
+window.banco = {
+  country:country,
+  fecha:fecha
+
+}
