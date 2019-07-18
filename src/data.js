@@ -18,8 +18,8 @@ for (let i = 0; i < rutaAnio.length; i++){
    nuevoArray.push( rutaAnio [i], rutaValor[i])
   }
   }
-  console.log(fecha);
-// return nuevoArray;
+  
+return nuevoArray;
 }
   
   
