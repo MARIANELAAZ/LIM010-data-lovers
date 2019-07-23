@@ -1,5 +1,4 @@
 //funcion para obtener los nombres de los paises
-
 const country = (data, nombrePais) => {
   const arrayCodigoPaises = [];
   let rutaCodigoPais = data[nombrePais].indicators;
@@ -9,26 +8,17 @@ const country = (data, nombrePais) => {
 
   return arrayCodigoPaises;
 }
-const fecha = (anioIncial,anioFinal,anioValor) => {
-const nuevoArray= [];
-const rutaAnio= Object.keys(anioValor); // todos los años (keys)//
-const rutaValor= Object.keys(anioValor); // todos los valores del año//
-for (let i = 0; i < rutaAnio.length; i++){
-  if (anioIncial >= rutaAnio [i] && anioFinal <= rutaAnio[i]){
-   nuevoArray.push( rutaAnio [i], rutaValor[i])
-  }
-  }
-  
-return nuevoArray;
-}
-  
-  
+//funcion para saber la data de los indicadores
+const datoIndicador = (dataPrincipal, Pais,indice)=>{
+  let rutaCodigoData = dataPrincipal[Pais].indicators[indice].data;
+    return rutaCodigoData;
+};
+//WORLDBANK.PER.indicators[0].data
 
 
-//WORLDBANK.CHL.indicators[0].countryCode
-//  funcion para mostrar los nombres
 window.banco = {
   country:country,
-  fecha:fecha
-
+  datoIndicador: datoIndicador,
+  fecha:fecha,
+  ordenarDatos:ordenarDatos,
 }
