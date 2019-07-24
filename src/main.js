@@ -53,29 +53,46 @@ const pintarPais = (listaDePais) => {
   return pais;
 }
 //muestra los datos de los indicadores (años y porcentaje)
- let objectData ={};
+ let objetoWorldbank ={};
 indicadorId.addEventListener('change',(event)=>{
   let seleccionarIndicador = event.target.value;
   console.log(event.target.value);
-  objectData= banco.datoIndicador(WORLDBANK, paisSelecionado, seleccionarIndicador);
-  // console.log(objectData);
+  objetoWorldbank= banco.datoIndicador(WORLDBANK, paisSelecionado, seleccionarIndicador);
+  // console.log(objetoWorldbank);
   });
+
+  const buscar= document.getElementById('buscar');
+  const numero1= document.getElementById('n1');
+  const numero2= document.getElementById('n2');
+
+  buscar.addEventListener('click',()=>{
+     const busqueda= fecha(objetoWorldbank,numero1.value, numero2.value);
+   })
+  
+  const ascendente =document.getElementById('ascendente');
+  const descendente =document.getElementById('descendente');
+  
+  orden.addEventListener('change',()=>{
+    const orden=document.getElementById('orden').value;
+    console.log(ordenarDatos(objetoWorldbank,orden));
+  })
+  
 
 
 const mostrar = document.getElementById('tabla');
 
+const mostrarTabla = (arrayTabla) =>{
 
 let templateTable = `
 <tr>
   <th>Fecha</th>
-  <th>Porcentaje</th> 
- 
+  <th>Porcentaje</th>  
 </tr>`;
-​
-for(let i = 0; i < .length; i++){
+for(let i = 0; i < arrayTabla.length; i++){
   templateTable += `<tr>
-  <td>${[i].}</td>
-  <td>${[i].}</td>
- 
+  <td>${[i]}</td>
+  <td>${[i]}</td>
 </tr>`
+}
+console.log(templateTable);
 }
