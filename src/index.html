@@ -12,11 +12,7 @@
 <body class="body">
   <!-- <div class="padre"> -->
   <div class="centrado" id="onload">
-    <div class="lds-facebook">
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <div class="lds-facebook">     
   </div>
   <header id="header" class="header ocultar">
     <nav id="nav" class="nav1 ocultar">
@@ -91,7 +87,7 @@
     <div class="indika">
       <section class="Indicadores ocultar">
         <p class="text">Por Indicador:</p>
-        <select name="indicadores" id="indicadores">
+        <select name="indicadores" class="indicadores" id="indicadores">
           <option disabled selected id="indicadorId" value="indicators">Busca Indicador</option> 
         <div id="data"></div>
         <input  type="number" id="n1" class="fecha1" min="1960" max="1970" value="1960"></input>
@@ -108,6 +104,12 @@
         <table id="tabla" style="width:100%"></table>
       </div>
     </div>
+<div>
+  <section>
+  <button id="promedio" class="seleccionar">promedio</button>
+  <output id="resultado"></output>
+</section>
+</div>
   </main>
   <footer></footer>
   <script src="./data/worldbank/worldbank.js"></script>

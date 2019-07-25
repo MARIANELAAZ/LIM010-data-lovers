@@ -54,19 +54,22 @@ const pintarPais = (listaDePais) => {
 }
 //muestra los datos de los indicadores (años y porcentaje)
  let objetoWorldbank ={};
-indicadorId.addEventListener('change',(event)=>{
+  indicadorId.addEventListener('change',(event)=>{
   let seleccionarIndicador = event.target.value;
   console.log(event.target.value);
   objetoWorldbank= banco.datoIndicador(WORLDBANK, paisSelecionado, seleccionarIndicador);
-  // console.log(objetoWorldbank);
+   console.log(objetoWorldbank);
   });
 
   const buscar= document.getElementById('buscar');
   const numero1= document.getElementById('n1');
   const numero2= document.getElementById('n2');
+  const mostrar = document.getElementById('tabla');
 
   buscar.addEventListener('click',()=>{
      const busqueda= fecha(objetoWorldbank,numero1.value, numero2.value);
+     mostrar.innerHTML= mostrarTabla(busqueda);
+    //  console.log(busqueda);
    })
   
   const ascendente =document.getElementById('ascendente');
@@ -74,25 +77,58 @@ indicadorId.addEventListener('change',(event)=>{
   
   orden.addEventListener('change',()=>{
     const orden=document.getElementById('orden').value;
-    console.log(ordenarDatos(objetoWorldbank,orden));
+    mostrar.innerHTML=mostrarTabla(ordenarDatos(objetoWorldbank,orden));
+    // console.log(ordenarDatos(objetoWorldbank,orden));
   })
-  
-
-
-const mostrar = document.getElementById('tabla');
-
-const mostrarTabla = (arrayTabla) =>{
-
+ 
+const mostrarTabla = (arrayTabla) => {
 let templateTable = `
 <tr>
   <th>Fecha</th>
   <th>Porcentaje</th>  
 </tr>`;
 for(let i = 0; i < arrayTabla.length; i++){
-  templateTable += `<tr>
-  <td>${[i]}</td>
-  <td>${[i]}</td>
-</tr>`
+  if(arrayTabla [i][1]!== ""){
+  templateTable += ` <tbody><tr>
+  <td>${arrayTabla[i] [0]}</td>
+  <td>${arrayTabla[i] [1]}</td>
+</tr> `
+  }
 }
-console.log(templateTable);
-}
+return templateTable;
+};
+
+//  const verPromedio = document.getElementById('promedio');
+//  const resultado = document.getElementById('resultado');
+
+// //  const verPromed = (object) =>{
+// //   const arrayValor= Object.values(object)
+// //   const nuevoArray= [];
+// //   for(i=0; i< arrayValor.length; i++){
+// //       if(arrayValor[i] !== ''){
+// //         nuevoArray.push(Number(arrayValor[i]));
+// //       }
+// //     }
+// //     return nuevoArray;
+// //   }
+
+// verPromedio.addEventListener('click',()=>{
+// // resultado.innerHTML=promedio(objetoWorldbank);
+// const num=converArrValor(objetoWorldbank);
+// console.log(promedio(num));
+//  })
+
+// verPromedio.addEventListener('click',()=>{
+//   const arrayValor= Object.values(objetoWorldbank);
+//   const nuevoArray= [];
+//   for(i=0; i< arrayValor.length; i++){
+//       if(arrayValor[i] !== ''){
+//         nuevoArray.push(Number(arrayValor[i]));
+//       }
+//     }
+//   resultado.innerHTML=promedio(nuevoArray);
+//   // console.log(parseFloat(promedio(banco.objetoWorldbank)));
+//   console.log(promedio(nuevoArray));
+//    })
+
+   
