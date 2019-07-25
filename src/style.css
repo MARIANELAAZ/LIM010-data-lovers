@@ -332,13 +332,11 @@ nav{
     display: flex;
     flex-direction: column;
     align-content: center;
-    position: absolute;
-    position: absolute;
     width: 606px;
     height: 50px;
     left: 417px;
     top: 560px;
-    text-align: center;
+ 
     
     background: rgba(222, 222, 222, 0.61);
     mix-blend-mode: normal;

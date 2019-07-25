@@ -4,7 +4,7 @@ const country = (data, nombrePais) => {
   let rutaCodigoPais = data[nombrePais].indicators;
   for (let i = 0; i < rutaCodigoPais.length; i++) {
     arrayCodigoPaises.push(rutaCodigoPais[i]['countryName'] + "" + rutaCodigoPais[i]['indicatorName']);
-  }
+  }; 
 
   return arrayCodigoPaises;
 };
@@ -36,44 +36,22 @@ const ordenarDatos = (objectData, condicion) => {
   }
   return arrayDataOrdenar;
 };
-
-// const promedio = (objeto) => {
-//   const arrayValor = Object.values(objeto);
-//   let suma = 0;
-//   let div;
-//   for (let i = 0; i < arrayValor.length; i++) {
-//     if (arrayValor[i] !== '') {
-//       suma = suma + arrayValor[i];
-//       div = suma / arrayValor.length;
-//     }
-//   }
-//   return div;
-// };
-
-// const converArrValor = (objeto) => {
-//   const arrayValor = Object.values(objeto);
-//   const arrayAnioValor = [];
-//   for (let i = 0; i < arrayValor.length; i++) {
-//     if (arrayValor[i] !== '') {
-//       arrayAnioValor.push(arrayValor[i]);
-//     }
-//   }
-//   return arrayAnioValor;
-// };
-
-// const promedio = (arrayValor) => {
-//   let suma = 0;
-//   for (let i = 0; i < arrayValor.length; i++) {
-//     suma = suma + arrayValor[i];
-//   }
-//   return (suma / arrayValor.length);
-// };
+// funcion para sumar y dividir el promedio
+const promedio = (arrayValor) => {
+  let suma = 0;
+  let div;
+  for (let i = 0; i < arrayValor.length; i++) {
+    suma = suma + arrayValor[i][1];
+    div = suma / arrayValor.length;
+  }
+  return div;
+};
 
 window.banco = {
   country: country,
   datoIndicador: datoIndicador,
   fecha: fecha,
   ordenarDatos: ordenarDatos,
-  // promedio: promedio,
-  // converArrValor: converArrValor,
+  promedio: promedio,
+  
 };

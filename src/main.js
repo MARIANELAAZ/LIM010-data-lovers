@@ -98,37 +98,16 @@ for(let i = 0; i < arrayTabla.length; i++){
 return templateTable;
 };
 
-//  const verPromedio = document.getElementById('promedio');
-//  const resultado = document.getElementById('resultado');
+ const verPromedio = document.getElementById('promedio');
+ const resultado = document.getElementById('resultado');
 
-// //  const verPromed = (object) =>{
-// //   const arrayValor= Object.values(object)
-// //   const nuevoArray= [];
-// //   for(i=0; i< arrayValor.length; i++){
-// //       if(arrayValor[i] !== ''){
-// //         nuevoArray.push(Number(arrayValor[i]));
-// //       }
-// //     }
-// //     return nuevoArray;
-// //   }
 
-// verPromedio.addEventListener('click',()=>{
-// // resultado.innerHTML=promedio(objetoWorldbank);
-// const num=converArrValor(objetoWorldbank);
-// console.log(promedio(num));
-//  })
 
-// verPromedio.addEventListener('click',()=>{
-//   const arrayValor= Object.values(objetoWorldbank);
-//   const nuevoArray= [];
-//   for(i=0; i< arrayValor.length; i++){
-//       if(arrayValor[i] !== ''){
-//         nuevoArray.push(Number(arrayValor[i]));
-//       }
-//     }
-//   resultado.innerHTML=promedio(nuevoArray);
-//   // console.log(parseFloat(promedio(banco.objetoWorldbank)));
-//   console.log(promedio(nuevoArray));
-//    })
+verPromedio.addEventListener('click',()=>{
+const num = banco.fecha(objetoWorldbank,numero1.value, numero2.value);
+resultado.innerHTML=promedio(num);
+console.log(banco.promedio(num));
+ })
+
 
    
