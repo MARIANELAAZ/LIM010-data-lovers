@@ -16,6 +16,17 @@ económicos y comerciales) que le permitirá una mejor visión en la toma de dec
 
 ## Imagen final del Proyecto
 
+  - Login: 
+
+    ![Login](imagenes/pantalla1.jpg "Usuario se Loguea")
+
+  - Seleccionar País:
+
+    ![Paises](imagenes/pantalla2.jpg "Usuario selecciona un País")
+
+  - Seleccionar Indicador, Rango de Fechas, ordenar y hallar promedio:
+
+    ![Indicadores](imagenes/pantalla3.jpg "Usuario puede visualizar Indicadores, seleccionar rango, ordenar y promedio")
 
 
 ## Investigación UX
@@ -34,10 +45,21 @@ económicos y comerciales) que le permitirá una mejor visión en la toma de dec
 
   - Desktop
 
-  ![Prototipo en papel](imagenes/desktop.jpg "Prototipo en papel")(imagenes/desktop1.jpg)
+  ![Prototipo en papel](imagenes/desktop.jpg "Prototipo en papel")
+  ![Prototipo en papel](imagenes/desktop1.jpg "Prototipo en papel")
+
 
   - Agregar un resumen del feedback recibido indicando las mejoras a realizar.
 
+      *) Jose Roldan (26 años - Consultor en un Banco): Las tres ventanas, me gustan pero, solo son indicadores de Desarrollo o hay mas tipos.
+
+      *) Ariana Pacheco(22 años - Estudiante Laboratoria): La primera pantalla sirve para loguearme lo unico que no me parece es que deban ir los link's para contacto inicio y paises, la segunda me queda claro que debo ingresar un País para ver su data y la tercera me parece muy linda y amigable.
+
+      *) Maritza Benites (45 años - Empresaria): Al visualizar las tres paginas observo una armonia en colores y funcionalidad, me queda claro para que es cada pantalla, es amigable e intuitiva.
+
+
   - Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en 
   Figma.
+
+    - https://www.figma.com/file/G6sP4nbZ28cPrH3fSEGHG38x/Untitled?node-id=0%3A1
 
