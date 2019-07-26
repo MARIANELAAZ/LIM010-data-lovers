@@ -84,7 +84,7 @@
       </section>
     </div>
     <!--tercera PAGINA-->
-    <div class="indika">
+    <div id="indika" class="ocultar">
       <section class="Indicadores ocultar">
         <p class="text">Por Indicador:</p>
         <select name="indicadores" class="indicadores" id="indicadores">
@@ -95,21 +95,21 @@
         <button id="buscar" class="buscar">Buscar</button>
       </section>
     </div>
-    <div>
+    <div id="ordenar" class="ocultar">
       <select name="ordenar" id="orden">
         <option value="des" id="descendente">descendente</option>
           <option value="asc" id="ascendente">ascendente</option>
       </select>
-      <div>
+      <div class="tabla">
         <table id="tabla" style="width:100%"></table>
       </div>
-    </div>
-<div>
-  <section>
-  <button id="promedio" class="seleccionar">promedio</button>
-  <output id="resultado"></output>
-</section>
-</div>
+      <section>
+          <button id="promedio" value="promedio" class="seleccionar">promedio</button>
+          <output id="resultado"></output>
+      </section>
+      </div>
+      </div>
+      </div>
   </main>
   <footer></footer>
   <script src="./data/worldbank/worldbank.js"></script>

@@ -11,7 +11,7 @@
 
 ## Resumen de Proyecto
 
-Esta Web permitirá brindar a los clientes - inversionistas los indicadores ( demograficos,
+Esta Web permitirá brindar a los usuarios - inversionistas los indicadores ( demográficos,
 económicos y comerciales) que le permitirá una mejor visión en la toma de decisiones.
 
 ## Imagen final del Proyecto
@@ -34,7 +34,7 @@ económicos y comerciales) que le permitirá una mejor visión en la toma de dec
 
   - Desktop
 
-  ![Prototipo en papel](imagenes/desktop.jpg "Prototipo en papel")
+  ![Prototipo en papel](imagenes/desktop.jpg "Prototipo en papel")(imagenes/desktop1.jpg)
 
   - Agregar un resumen del feedback recibido indicando las mejoras a realizar.
 
