@@ -37,13 +37,13 @@
   </header>
   <main>
     <!--PRIMERA PAGINA-->
-    <div id="Ingresar">
+    <div id="ingresar">
       <section class="section1" id="section1">
         <form class="login">
 
-          <div class="formName">
-            <img class="img-logo"
-              src="https://desarrollodocente.org/assets/collaborators/logo_BM-e383f739aae4ac6ed2512bcdef10c51cc95ff0ef98de3f2849a18a5ae57d9536.png" />
+          <div class="form-name">
+            <img class="img-logo" alt="" src="https://desarrollodocente.org/assets/collaborators/logo_BM-e383f739aae4ac6ed2512bcdef10c51cc95ff0ef98de3f2849a18a5ae57d9536.png"/>
+
             <div class="field">
               <!--correo electrónico-->
               <p class="text">Correo Electrónico</p>
@@ -74,7 +74,7 @@
         <div id="imag" class="imag">
           <form action="" class="action">
             <div id="paises" class="paises">
-              <button id="peru" value="PER" class="Peru">Perú</button>
+              <button id="peru" value="PER" class="peru">Perú</button>
               <button id="brasil" value="BRA" class="brasil">Brasil</button>
               <button id="chile" value="CHL" class="chile">Chile</button>
               <button id="mexico" value="MEX" class="mexico">México</button>
@@ -85,30 +85,38 @@
     </div>
     <!--tercera PAGINA-->
     <div class="indika">
-      <section class="Indicadores ocultar">
+      <section class="indicador ocultar">
         <p class="text">Por Indicador:</p>
         <select name="indicadores" class="indicadores" id="indicadores">
-          <option disabled selected id="indicadorId" value="indicators">Busca Indicador</option> 
-        <div id="data"></div>
-        <input  type="number" id="n1" class="fecha1" min="1960" max="1970" value="1960"></input>
-        <input  type="number" id="n2" class="fecha2"min="1960" max="1970" value="2017"></input>
+          <option disabled selected class="indicadorid" id="indicadorid" value="indicators">Busca Indicador</option> 
+        </select>
+          <form id="data" class="data1">
+        <label class="name">Desde:
+        <input  type="number" id="n1" class="fecha1" min="1960" max="1970" value="1960">
+        </label>
+        <label class="name">Hasta:
+        <input  type="number" id="n2" class="fecha2" min="1960" max="1970" value="2017">
+        </label>
         <button id="buscar" class="buscar">Buscar</button>
+          </form>
       </section>
     </div>
-    <div>
-      <select name="ordenar" id="orden">
-        <option value="des" id="descendente">descendente</option>
-          <option value="asc" id="ascendente">ascendente</option>
+    <div class="section-tres" id="section-tres">
+    <section class="section3">
+      <select name="ordenar" class="orden" id="orden">
+        <option value="des" id="descendente">Descendente</option>
+          <option value="asc" id="ascendente">Ascendente</option>
       </select>
       <div>
         <table id="tabla" style="width:100%"></table>
       </div>
-    </div>
+    </section>
 <div>
-  <section>
-  <button id="promedio" class="seleccionar">promedio</button>
+  <section class="section4">
+  <button id="promedio" class="seleccionar">Promedio</button>
   <output id="resultado"></output>
 </section>
+</div>
 </div>
   </main>
   <footer></footer>

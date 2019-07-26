@@ -37,7 +37,24 @@ económicos y comerciales) que le permitirá una mejor visión en la toma de dec
   ![Prototipo en papel](imagenes/desktop.jpg "Prototipo en papel")
 
   - Agregar un resumen del feedback recibido indicando las mejoras a realizar.
+  Agregar resumen del Feedback recibido:
+
+  Jose Roldan (26 años - Consultor Banco): Las tres ventanas me gustan, solo son indicadores de desarrollo o hay más tipos.
+
+  Ariana Pacheco (22 años - Estudiante Laboratoria): La primera pantalla sirve para loguearme lo que no me parece es que debían ir los link’s para contacto inicio, países, la segunda me queda claro que debo seleccionar un País para ver su data, la tercera me queda muy clara y amigable.
+
+  Maritza Benites (46 años - Empresaria): Al observar las tres páginas veo armonía de colores y funcionalidad, me queda claro para qué es cada pantalla es intuitiva y amigable.
+
+
 
   - Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en 
   Figma.
 
+https://www.figma.com/file/G6sP4nbZ28cPrH3fSEGHG38x/Untitled?node-id=0%3A1
+
+Vista escritorio
+
+![Prototipo en papel](imagenes/escritorio.png "Prototipo en papel")
+
+Vista en mobile
+![Prototipo en papel](imagenes/mobile.png "Prototipo en papel")

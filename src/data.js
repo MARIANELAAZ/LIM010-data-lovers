@@ -3,7 +3,7 @@ const country = (data, nombrePais) => {
   const arrayCodigoPaises = [];
   let rutaCodigoPais = data[nombrePais].indicators;
   for (let i = 0; i < rutaCodigoPais.length; i++) {
-    arrayCodigoPaises.push(rutaCodigoPais[i]['countryName'] + "" + rutaCodigoPais[i]['indicatorName']);
+    arrayCodigoPaises.push(rutaCodigoPais[i]['countryName'] + ' ' + rutaCodigoPais[i]['indicatorName']);
   }; 
 
   return arrayCodigoPaises;
