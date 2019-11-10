@@ -58,7 +58,5 @@ económicos y comerciales) que le permitirá una mejor visión en la toma de dec
       *) Maritza Benites (45 años - Empresaria): Al visualizar las tres paginas observo una armonia en colores y funcionalidad, me queda claro para que es cada pantalla, es amigable e intuitiva.
 
 
-  - Imagen y link del prototipo de alta fidelidad final (mobile y desktop):
-  
-  - [Figma](https://www.figma.com/file/YhFH7ljNR8c0EmsqcoNiFc/Banco-Mundial?node-id=0%3A1 )
+  -Imagen y link del prototipo de alta fidelidad final (mobile y desktop)- [Figma](https://www.figma.com/file/YhFH7ljNR8c0EmsqcoNiFc/Banco-Mundial?node-id=0%3A1 )
 
