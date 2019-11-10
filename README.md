@@ -61,5 +61,5 @@ económicos y comerciales) que le permitirá una mejor visión en la toma de dec
   - Imagen y link del prototipo de alta fidelidad final (mobile y desktop) en 
   Figma.
 
-    - https://www.figma.com/file/G6sP4nbZ28cPrH3fSEGHG38x/Untitled?node-id=0%3A1
+    -https://www.figma.com/file/YhFH7ljNR8c0EmsqcoNiFc/Banco-Mundial?node-id=0%3A1 
 
